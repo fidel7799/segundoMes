@@ -60,7 +60,7 @@
 						<div class="hero-text">
 							<h3>Bienvenida a nuestro</h3>
 							<h1>PRIMER MES JUNTOS</h1>
-							<div class="pixel"><a href="#home">Iniciar</a></div>
+							<div class="pixel"><a href="#home" onclick="reproducirAudio()">Iniciar</a></div>
 						</div>
 					</div>
 				</div>
@@ -83,39 +83,50 @@
 						<div class="swiper-container client-swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide client-box">
+									<img src="assets/jerry.png" class="client-logo" />
+									<h3 class="text-center title">
+										Estás <span class="red">preciosa</span>
+									</h3>
+									<p>
+										Ya quisieran los atardeceres de Punto Fijo estar así como tu carita
+										(es lo que quiero ver cada mañana al despertar y
+										cada noche antes de dormir :$)
+										
+									</p>
+								</div>
+								<div class="swiper-slide client-box">
 									<img src="assets/thunder.jpg" class="client-logo" />
 									<h3 class="text-center title">
 										Eres <span class="yellow">electrizante</span>
 									</h3>
-									<p>A eso le llamo yo, sentir la chispa</p>
+									<p>
+										A eso le llamo yo, sentir la chispa. Tengo mi propio
+										desfibrilador portátil
+									</p>
+								</div>
+								<div class="swiper-slide client-box">
+									<img src="assets/orquidea.jpg" class="client-logo" />
+									<h3 class="text-center title">
+										Eres <span class="pink">única</span> y
+										<span class="green">exclusiva</span>
+									</h3>
+									<p>
+										Como una orquídea rara que solo florece en lugares especiales, y, qué bonito como está floreciendo en mi corazón :)
+									</p>
 								</div>
 								<div class="swiper-slide client-box">
 									<img src="assets/olor.png" class="client-logo" />
 									<h3 class="text-center title">
 										NO te <span class="blue">bañas</span>
 									</h3>
-									<p>Así me gustas más</p>
+									<p>Así me gustas más, olorosita ñomi</p>
 								</div>
 								<div class="swiper-slide client-box">
-									<img src="assets/logo-3.png" class="client-logo" />
+									<img src="assets/happy.gif" class="client-logo" />
 									<h3 class="text-center title">
-										Rebranding of the best motion studio
+										La <span class="purple">conexión</span> que tenemos
 									</h3>
-									<p class="text-center tag">Branding, UI, Website</p>
-								</div>
-								<div class="swiper-slide client-box">
-									<img src="assets/logo-1.png" class="client-logo" />
-									<h3 class="text-center title">
-										Visual identity for upsidedown
-									</h3>
-									<p class="text-center tag">Branding, UI, Website</p>
-								</div>
-								<div class="swiper-slide client-box">
-									<img src="assets/logo-2.png" class="client-logo" />
-									<h3 class="text-center title">
-										Visual identity for upsidedown
-									</h3>
-									<p class="text-center tag">Branding, UI, Website</p>
+									<p>No sé, todo esto se siente muy mágico y en serio me alegra que seas tú quien sea la causante de todo esto en mí</p>
 								</div>
 							</div>
 						</div>
@@ -218,6 +229,7 @@
 								</div>
 								<div class="swiper-slide testimonial-box pink">
 									<h1>¿Hace falta que continue? XD</h1>
+									<p>Si llegaste hasta acá, te amo muchísimo <3 no supero ni superaré jamás el hecho de que tu y yo estemos juntos</p>
 								</div>
 							</div>
 							<!-- Add Pagination -->
@@ -234,7 +246,7 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<h1>
-							Estuve haciendo <span class="pink">calculos</span> y resulta que
+							Estuve haciendo <span class="pink">cálculos</span> y resulta que
 							presentas una <span class="pink">deuda</span> de:
 						</h1>
 					</div>
@@ -251,7 +263,7 @@
 						<h3>Vidas conmigo :)</h3>
 					</div>
 					<div class="col-md-12 text-center stat-box">
-						<h4 class="pink">19</h4>
+						<h4 class="pink">192</h4>
 						<h6>Sentones tmb ajio ajio ajio</h6>
 						<img src="./assets/ajio.png" alt="yoshi" width="100px" />
 					</div>
@@ -260,15 +272,16 @@
 		</section>
 
 		<!-- Contact Banner -->
-		<section class="contact-banner">
+		<section class="contact-banner" id="target">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<h1>
-							Oh no, el <span class="pink">maestro del mal</span> se infiltró en
-							este mundo
+							Oh no, el
+							<span class="pink bold">Lord Maestro Señor de la Oscuridad</span>
+							(un loquito del centro) se infiltró en nuestro mundo
 						</h1>
-						<h2>¡Véncelo!</h2>
+						<h2>¡Matemos a ese mmgvo!</h2>
 						<div id="boss">
 							<img
 								src="./assets/boss.gif"
@@ -277,10 +290,20 @@
 							/>
 						</div>
 						<div id="content"></div>
-						<div id="danio"><img id="danioImg" src="./assets/danio.gif" alt="death" style="margin-bottom: 20px"></div>
+						<div id="danio">
+							<img
+								id="danioImg"
+								src="./assets/danio.gif"
+								alt="death"
+								style="margin-bottom: 20px"
+							/>
+						</div>
+							<div class="health-bar-container">
+								<div class="health-bar"></div>
+							</div>
 						<p>
-							Vida: <a id="clicks" class="counter">50</a> /
-							<a class="counter">50</a>
+							Vida: <a id="clicks" class="counter">700</a> /
+							<a class="counter">700</a>
 						</p>
 						<div class="pixel" onclick="quitarVida()"><a>Atacar</a></div>
 					</div>
@@ -294,30 +317,72 @@
 				<div class="row footer">
 					<div class="col-md-12 text-center">
 						<div id="espera">
-							<h2 style="margin-top: 200px; margin-bottom: 200px">Primero derrota al pendejo de arriba</h2>
+							<h2 style="margin-top: 200px; margin-bottom: 200px">
+								Primero derrota al loquito de arriba
+							</h2>
 						</div>
-            <div id="poison">
-              <h1>¡Lograste una <span class="green">victoria</span> contundente!</h1>
-              <img src="./assets/poison.png" alt="posion" style="margin-bottom: 20px" width="150px">
-              <h2>Pero ... Parece ser nos <span class="pink">envenenó</span> con su daga :(</h2>
-              <img src="./assets/pocion2.png" alt="pocion" style="margin-bottom: 20px; margin-top: 40px">
-              <h3>¡Rapido! Si tomamos de esta <span class="yellow">pocima secreta</span> podremos <span class="green">curarnos</span> pero ... Su <span class="pink">efecto secundario</span> es que estaremos <span class="pink">enamorados eternamente</span></h3>
-              <h2>¿Deseas tomarla?</h2>
-              <div class="pixel"><a>Siiiiii</a></div>
-              <div class="pixel" id="noBtn"><a>No</a></div>
-            </div>
+						<div id="poison">
+							<h1>
+								¡Logramos una <span class="green">victoria</span> contundente!
+							</h1>
+							<h4 style="text-decoration: line-through">
+								Por no decir que le metimos el webo nawara, le diste dedo a ese
+								botón como yo te quiero dar dedo a ti, mi vida
+							</h4>
+							<img
+								src="./assets/poison.png"
+								alt="posion"
+								style="margin-bottom: 20px"
+								width="150px"
+							/>
+							<h2>
+								Pero ... Parece que nos <span class="pink">envenenó</span> con
+								su daga que estaba encantada con agua del <span class="purple">Río Guaire</span> D:
+							</h2>
+							<img
+								src="./assets/pocion2.png"
+								alt="pocion"
+								style="margin-bottom: 20px; margin-top: 40px"
+							/>
+							<h3>
+								¡Rápido! Si tomamos de esta
+								<span class="yellow">pócima secreta</span> podremos
+								<span class="green">curarnos</span> pero ... Tiene un
+								<span class="pink">efecto secundario</span> ... Y es que
+								estaremos ...
+								<span class="red" style="text-decoration: underline"
+									>ETERNAMENTE ENAMORADOS</span
+								>
+							</h3>
+							<h2>¿Deseas tomarla?</h2>
+							<div class="pixel" onclick="mostrarFinal()"><a href="#sabiaEleccion">Siiiiii</a></div>
+							<div class="pixel" id="noBtn"><a>No</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="sabiaEleccion">
+					<div class="col-md-12 text-center">
+						<h2>
+							Okei, sabía que escogerías esta opción y ahora tamos curados, sólo nos queda disfrutar el resto de nuestra existencia juntos
+						</h2>
+						<img src="./assets/heart.png" alt="Lisbeliu" width="100px" />
+						<h3>Gracias por ser un pilar fundamental en mi vida, te amo muchísimo de veritas, mi cielito lindo</h3>
 					</div>
 				</div>
 				<div class="row sub-footer">
 					<div class="col-md-12 text-center">
 						<p>
 							Hecho con amor, para la personita que
-							<a class="outline">más</a> quiero, adoro y amo en este mundo <3
+							<a class="outline">más</a> quiero, adoro y amo en este mundo <333
 						</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<audio id="audioCenter" src="./assets/center.mp3"></audio>
+		<audio id="audioBattle" src="./assets/batalla.mp3"></audio>
+		<audio id="audioWin" src="./assets/victoria.mp3"></audio>
+		<audio id="audioAttack" src="./assets/Cut.mp3"></audio>
 
 		<!-- Some Javascript -->
 		<script src="js/jquery-2.1.1.js"></script>
@@ -391,58 +456,105 @@
 			});
 		</script>
 		<script type="text/javascript">
-			var clicks = 6;
+			var clicks = 700;
+			var vidaMax = 700;
 			var el = document.getElementById("content");
-      var boss = document.getElementById("boss");
-      var danio = document.getElementById("danioImg");
+			var boss = document.getElementById("boss");
+			var danio = document.getElementById("danioImg");
+			var eleccion = document.getElementById("sabiaEleccion");
 			var content;
 
 			boss.style.display = "block";
-      danio.style.display = "none";
-            document.getElementById("poison").style.display = "none";
-            document.getElementById("espera").style.display = "block";
+			danio.style.display = "none";
+			eleccion.style.display = "none";
+			document.getElementById("poison").style.display = "none";
+			document.getElementById("espera").style.display = "block";
+
+			const audioCenter = document.getElementById('audioCenter');
+			const audioBattle = document.getElementById('audioBattle');
+			const audioWin = document.getElementById('audioWin');
+			const audioAttack = document.getElementById('audioAttack');
+			const target = document.getElementById('target');
+
+			function reproducirAudio() {
+				audioCenter.play();
+			}
+
+			// Crea un Intersection Observer
+			const observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						// Si el div está en el viewport, reproduce el audio
+						audioCenter.pause();
+						audioBattle.play();
+					}
+				});
+			});
+
+			// Observa el div objetivo
+			observer.observe(target);
+
+			function updateHealthBar() {
+            const healthBar = document.querySelector('.health-bar');
+            const healthText = document.querySelector('.health-text');
+            const healthPercentage = (clicks / vidaMax) * 100;
+
+            healthBar.style.width = healthPercentage + '%';
+        }
+
+		function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 			function quitarVida() {
-        // el.innerHTML = '<img src="./assets/danio.gif" alt="death" style="margin-left: -140px; margin-bottom: 20px">';
-        
+				// el.innerHTML = '<img src="./assets/danio.gif" alt="death" style="margin-left: -140px; margin-bottom: 20px">';
+
 				if (clicks > 0) {
-          
-				boss.style.display = "none";
-        danio.style.display = "block";
-        danio.src = '';
-        danio.src = './assets/danio.gif';
+					audioAttack.play();
+					boss.style.display = "none";
+					danio.style.display = "block";
+					danio.src = "";
+					danio.src = "./assets/danio.gif";
 					setTimeout(function () {
 						boss.style.display = "block";
-            danio.style.display = "none";
+						danio.style.display = "none";
 					}, 500);
-					clicks -= 1;
+					clicks -= randomIntFromInterval(10, 20);
+					updateHealthBar();
 					document.getElementById("clicks").innerHTML = clicks;
-					if (clicks == 0) {
-            setTimeout(function () {
-              el.insertAdjacentHTML(
-							"afterbegin",
-							'<img src="./assets/muerte.gif" alt="death" style="margin-left: -140px; margin-bottom: 20px">'
-						);
-            danio.style.display = "none";
-						boss.style.display = "none";
-            document.getElementById("poison").style.display = "block";
-            document.getElementById("espera").style.display = "none";
-					}, 500);
-						
+					if (clicks <= 0) {
+						clicks=0;
+						document.getElementById("clicks").innerHTML = clicks;
+						setTimeout(function () {
+							observer.unobserve(target);
+							audioBattle.pause();
+							audioWin.play();
+							el.insertAdjacentHTML(
+								"afterbegin",
+								'<img src="./assets/muerte.gif" alt="death" style="margin-left: -140px; margin-bottom: 20px">'
+							);
+							danio.style.display = "none";
+							boss.style.display = "none";
+							document.getElementById("poison").style.display = "block";
+							document.getElementById("espera").style.display = "none";
+						}, 500);
 					}
 				}
 			}
 
-      var b = document.getElementById("noBtn");
-b.addEventListener("click",change);
-function change()
-{
-let i =Math.abs(Math.floor(Math.random()*window.innerWidth-200))
-let j = Math.abs(Math.floor(Math.random()*window.innerHeight-210));
-    b.style.left = i+"px";
-    b.style.top = j+"px";
-    b.style.position = "fixed";
-}
+			var b = document.getElementById("noBtn");
+			b.addEventListener("click", change);
+			function change() {
+				let i = Math.abs(Math.floor(Math.random() * window.innerWidth - 200));
+				let j = Math.abs(Math.floor(Math.random() * window.innerHeight - 210));
+				b.style.left = i + "px";
+				b.style.top = j + "px";
+				b.style.position = "fixed";
+			}
+
+			function mostrarFinal() {
+				eleccion.style.display = "block";
+			}
 		</script>
 	</body>
 </html>
