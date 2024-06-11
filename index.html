@@ -363,10 +363,11 @@
 				<div class="row" id="sabiaEleccion">
 					<div class="col-md-12 text-center">
 						<h2>
-							Okei, sabía que escogerías esta opción y ahora tamos curados, sólo nos queda disfrutar el resto de nuestra existencia juntos
+							Okei, sabía que escogerías esta opción y ahora que tamos curados, sólo nos queda disfrutar el resto de nuestra existencia juntos
 						</h2>
 						<img src="./assets/heart.png" alt="Lisbeliu" width="100px" />
 						<h3>Gracias por ser un pilar fundamental en mi vida, te amo muchísimo de veritas, mi cielito lindo</h3>
+						<h2>Feliz primer mes ^.^</h2>
 					</div>
 				</div>
 				<div class="row sub-footer">
@@ -520,7 +521,6 @@
 						danio.style.display = "none";
 					}, 500);
 					clicks -= randomIntFromInterval(10, 20);
-					updateHealthBar();
 					document.getElementById("clicks").innerHTML = clicks;
 					if (clicks <= 0) {
 						clicks=0;
@@ -539,6 +539,7 @@
 							document.getElementById("espera").style.display = "none";
 						}, 500);
 					}
+					updateHealthBar();
 				}
 			}
 
