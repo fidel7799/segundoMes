@@ -126,7 +126,7 @@
 									<h3 class="text-center title">
 										La <span class="purple">conexión</span> que tenemos
 									</h3>
-									<p>No sé, todo esto se siente muy mágico y en serio me alegra que seas tú quien sea la causante de todo esto en mí</p>
+									<p>No sé, todo esto se siente muy mágico y en serio me alegra mucho que seas tú quien cause todo esto en mí</p>
 								</div>
 							</div>
 						</div>
@@ -162,22 +162,22 @@
 								<div class="swiper-slide testimonial-box yellow">
 									<h1>Ingeniero de sistemas</h1>
 									<p>Sabe reiniciar impresoras y licuadoras</p>
-									<img src="./assets/smart.png" alt="Fidel" width="150px" />
+									<img src="./assets/smart.png" alt="smart" width="150px" />
 								</div>
 								<div class="swiper-slide testimonial-box purple">
 									<h1>Citadino</h1>
 									<p>Lo demás es grass and snakes<br />:P</p>
-									<img src="./assets/snake.jpg" alt="Fidel" width="150px" />
+									<img src="./assets/snake.jpg" alt="snake" width="150px" />
 								</div>
 								<div class="swiper-slide testimonial-box blue">
 									<h1>Otaku</h1>
 									<p>Ahorra agua porque no se baña, por ende es eco-friendly</p>
-									<img src="./assets/eco.png" alt="Fidel" width="150px" />
+									<img src="./assets/eco.png" alt="eco" width="150px" />
 								</div>
 								<div class="swiper-slide testimonial-box pink">
 									<h1>Payaso</h1>
 									<p>Si te hace reir te hace gemir<br />;)</p>
-									<img src="./assets/payaso.png" alt="Fidel" width="150px" />
+									<img src="./assets/payaso.png" alt="payaso" width="150px" />
 								</div>
 								<div class="swiper-slide testimonial-box yellow">
 									<h1>Guapo</h1>
@@ -228,8 +228,8 @@
 									<img src="./assets/yoshi.gif" alt="yoshi" width="150px" />
 								</div>
 								<div class="swiper-slide testimonial-box pink">
-									<h1>¿Hace falta que continue? XD</h1>
-									<p>Si llegaste hasta acá, te amo muchísimo <3 no supero ni superaré jamás el hecho de que tu y yo estemos juntos</p>
+									<h1>¿Hace falta que continúe? XD</h1>
+									<p>Si llegaste hasta acá, te amo muchísimo <3 no supero ni superaré jamás el hecho de que tú y yo estemos juntos</p>
 								</div>
 							</div>
 							<!-- Add Pagination -->
@@ -464,6 +464,7 @@
 			var danio = document.getElementById("danioImg");
 			var eleccion = document.getElementById("sabiaEleccion");
 			var content;
+			var finalMostrado = false;
 
 			boss.style.display = "block";
 			danio.style.display = "none";
@@ -494,6 +495,9 @@
 
 			// Observa el div objetivo
 			observer.observe(target);
+
+			var b = document.getElementById("noBtn");
+			b.addEventListener("click", change);
 
 			function updateHealthBar() {
             const healthBar = document.querySelector('.health-bar');
@@ -543,18 +547,23 @@
 				}
 			}
 
-			var b = document.getElementById("noBtn");
-			b.addEventListener("click", change);
+			
 			function change() {
-				let i = Math.abs(Math.floor(Math.random() * window.innerWidth - 200));
-				let j = Math.abs(Math.floor(Math.random() * window.innerHeight - 210));
-				b.style.left = i + "px";
-				b.style.top = j + "px";
-				b.style.position = "fixed";
+				if (!finalMostrado) {
+					let i = Math.abs(Math.floor(Math.random() * window.innerWidth - 200));
+					let j = Math.abs(Math.floor(Math.random() * window.innerHeight - 210));
+					b.style.left = i + "px";
+					b.style.top = j + "px";
+					b.style.position = "fixed";
+				}
 			}
 
 			function mostrarFinal() {
+				finalMostrado = true;
 				eleccion.style.display = "block";
+				b.style.left = "0";
+					b.style.top = "0";
+					b.style.position = "initial";
 			}
 		</script>
 	</body>
