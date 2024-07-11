@@ -5,7 +5,7 @@
  html { scroll-behavior: smooth; }
 
  body {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   background-color: #f2f2f2;
   font-size: 16px;
   color: #222;
@@ -62,14 +62,28 @@ img {
   color: #00f329 !important;
   font-weight: bold;
 }
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+
+.cajaRespuesta {
+  margin: 10px;
+}
+
+.respuesta {
+  margin: 10px;
+}
 
 .btn {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Hero Section */
 header.hero {
-  background: url(../assets/playa.png) no-repeat center center fixed;
+  background: url(../assets/portada3.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -82,8 +96,11 @@ header.hero {
 }
 
 header.hero .hero-text {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  padding: 20px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
 }
 header.hero .row {
   position: relative;
@@ -101,7 +118,7 @@ a.menu:hover {
   -webkit-transform: translateX(-5px);
 }
 header.hero h1 {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 4.5em;
   font-weight: 600;
   line-height: 1.4em;
@@ -146,12 +163,12 @@ ul.social-links li a img {
 }
 h4.sub-heading {
   text-transform: uppercase;
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   color: #4e4c58;
 }
 h1.heading {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   color: #4e4c58;
   font-size: 3em;
@@ -183,7 +200,6 @@ h1.heading.blue:after {
   background-color: #00c0c7;
 }
 
-
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -214,7 +230,7 @@ h1.heading.blue:after {
 }
 .client-box p.tag {
   color: #7447ae;
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 1em;
 }
 .client-box a {
@@ -262,19 +278,19 @@ h1.heading.blue:after {
   min-height: 400px;
 }
 .testimonial-box h1 {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 1em;
 }
 .testimonial-box p.name {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 1.2em;
   margin-bottom: 0;
 }
 .testimonial-box p.designation {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 0;
 }
 .testimonial-box.yellow {
@@ -301,12 +317,12 @@ h1.heading.blue:after {
   margin-bottom: 4em;
 }
 .stat-box h1 {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   font-size: 5.6em;
 }
 .stat-box h3 {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   color: #4e4c58;
   font-size: 2em;
@@ -315,31 +331,33 @@ h1.heading.blue:after {
 
 /* Contact Banner */
 .contact-banner {
-  background: url(../assets/bg-pat.png) #664fee repeat;
+  background-color: whitesmoke;
   color: #fff;
   padding: 6em;
 }
 .contact-banner h1 {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 3em;
   margin-top: 0;
   margin-bottom: 1em;
 }
 
+#pregunta1, #pregunta2, #pregunta3 {
+  padding-bottom: 200px;
+}
 
 /* Footer */
 .footer {
-  background-color: #37324b;
+  background-color: #461010;
   padding: 5em;
   color: #FFF;
 }
 .footer h1 {
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   font-size: 3em;
   color: #FFF;
-  margin-bottom: 2em;
 }
 .footer h1 span {
   color: #fff;
@@ -349,7 +367,6 @@ h1.heading.blue:after {
   content: '';
   width: 80px;
   height: 4px;
-  background-color: #37a7ff;
   display: block;
   position: absolute;
   left: 50%;
@@ -365,10 +382,10 @@ h1.heading.blue:after {
 
 /* Sub-footer */
 .sub-footer {
-  background-color: #322e45;
+  background-color: #461010;
   padding: 2em;
   color: #a3a1ac;
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
 }
 .sub-footer p {
@@ -472,7 +489,7 @@ ul.main-nav li {
 }
 ul.main-nav li a {
   color: #fff;
-  font-family: 'Tiny5', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   padding: 5px 15px;
